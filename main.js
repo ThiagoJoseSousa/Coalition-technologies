@@ -1,5 +1,7 @@
 const mountainRadios = document.getElementsByName('navigation-radio');
-const mountains = document.getElementsByClassName('mountain-container')
+const mountains = document.getElementsByClassName('mountain-container');
+const navMobile = document.getElementsByClassName('s-mountain-nav');
+
 const nav = document.getElementById('navbar');
 
 const switchMountain = (e)=>{    
@@ -12,7 +14,11 @@ const switchMountain = (e)=>{
 }
 
 for (let i=0; i<mountainRadios.length ; i++){
-    mountainRadios[i].addEventListener('change', switchMountain)
+    mountainRadios[i].addEventListener('change', switchMountain);
+    navMobile[i].checked= false;
+    navMobile[i].addEventListener('change', (e)=> {
+        mountains[e.target.value].classList.toggle('s-visible')
+    })
 }
 
 const switchNav = () => {

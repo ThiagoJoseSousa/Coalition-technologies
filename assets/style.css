@@ -416,7 +416,7 @@ a {
     display: none;
 }
 
-.navigation-radio:checked + label{
+.navigation-radio:checked + label, .s-mountain-nav:checked + label{
     background-color: rgb(176,180,190);
     color: rgb(65,79,107);
     text-decoration: underline;
@@ -430,6 +430,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .mountain-container.visible{
@@ -512,65 +513,86 @@ footer .logo-name span{
     font-family: "Lato";
 }
 
-.m-visible, .s-visible {
+/* Common for smaller screens */
+.s-mountain-navigation,
+.m-visible,
+.s-visible,
+.s-mountain-nav {
     display: none;
 }
 
-@media screen and (max-width:60em){
-    .slider, .manual-navigation{
-        max-width:30rem;
+/* Medium-sized screens */
+@media screen and (max-width:60em) {
+    .slider,
+    .manual-navigation {
+        max-width: 30rem;
     }
 
-    .m-visible{
+    .m-visible {
         display: inline-block;
     }
 
-    /* section 1 */
+    /* Section 1 */
     #first-section h1 {
         transform: translate(-42%, -60%);
     }
 
-    /* end section 1 */
-
-    .small-lh{
+    .small-lh {
         justify-content: center;
     }
 
-    /* third-section */
+    /* Third section */
+    /* Hide desktop */
+    .mountain-navigation,
+    .mountain-container.visible {
+        display: none;
+    }
+    /* End hide desktop */
 
-    .third-header{
+    /* Display for smaller screens */
+    .s-mountain-navigation,
+    .mountain-container.s-visible {
+        display: flex;
+    }
+
+    .third-header {
         margin: 0;
     }
 
-    .third-header-wrapper{
+    .third-header-wrapper {
         flex-direction: column;
     }
-    #third-section .content-font{
+
+    #third-section .content-font {
         width: 80%;
         margin: auto;
-        margin-bottom:0.625rem;
+        margin-bottom: 0.625rem;
     }
-    /* end second section */
 
-
+    .mountain-ul label {
+        width: 100%;
+    }
+    /* End third section */
 }
 
-@media screen and (max-width:34.375em){
-    .slider, .manual-navigation{
-        max-width:15rem;
+/* Small-sized screens */
+@media screen and (max-width:34.375em) {
+    .slider,
+    .manual-navigation {
+        max-width: 15rem;
     }
 
-    .s-visible{
+    .s-visible {
         display: inline-block;
     }
 
-    .schedule{
-        margin-left: 0;
-        width: 100%;
+    .schedule {
+        margin: auto;
+        width: 18rem;
         padding: 0.625rem;
     }
 
-    #footer .flex{
+    #footer .flex {
         flex-direction: column;
         align-items: center;
     }
