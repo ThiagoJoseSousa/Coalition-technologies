@@ -12,16 +12,16 @@
 <body>
     <nav id="navbar">
         <div class="nav-content max-width">
-            <div class="mr-auto flex">
+            <a href="#" class="mr-auto flex no-underline">
                 <img src="./assets/img/Logo.png" alt="logo" class="logo-img" id="nav-img" />
                 <div id="nav-name" class="flex-column flex-middle logo-name">
                     <span class="small-angeles">Los Angeles</span>
                     <span class="small-mountain">Mountains</span>
                 </div>
-            </div>
+            </a>
             <ul class="nav-links">
-                <a href="#">01. History</a>
-                <a href="#">02. Team</a>
+                <a href="#second-section">01. History</a>
+                <a href="#third-section">02. Team</a>
             </ul>
         </div>
     </nav>
@@ -47,12 +47,20 @@
         </div>
 
         <div id="carousel-wrapper">
-            <div class="margin-auto slider">
+            <div class="margin-auto slider max-width">
                 <div class="slides">
                     <input type="radio" name="carousel-radio" id="carousel-1" checked="checked">
                     <input type="radio" name="carousel-radio" id="carousel-2">
                     <input type="radio" name="carousel-radio" id="carousel-3">
-                
+                    <input type="radio" name="carousel-radio" id="carousel-4">
+                    <input type="radio" name="carousel-radio" id="carousel-5">
+                    <input type="radio" name="carousel-radio" id="carousel-6">
+                    <input type="radio" name="carousel-radio" id="carousel-7">
+                    <input type="radio" name="carousel-radio" id="carousel-8">
+                    <input type="radio" name="carousel-radio" id="carousel-9">
+                    <input type="radio" name="carousel-radio" id="carousel-10">
+                    <input type="radio" name="carousel-radio" id="carousel-11">
+                    <input type="radio" name="carousel-radio" id="carousel-12">
 
                 <div class="slide first">
                     <img src="./assets/img/second section/Group 10.png" alt="Climber atop mountain summit gazes under vast sky.">
@@ -103,10 +111,19 @@
                 </div>
 
                 </div>
-                <div class="manual-navigation">
+                <div class="manual-navigation max-width">
                     <label for="carousel-1" class="manual-btn manual-btn1"></label>
                     <label for="carousel-2" class="manual-btn manual-btn2"></label>
                     <label for="carousel-3" class="manual-btn manual-btn3"></label>
+                    <label for="carousel-4" class="manual-btn manual-btn4 m-visible"></label>
+                    <label for="carousel-5" class="manual-btn manual-btn5 m-visible"></label>
+                    <label for="carousel-6" class="manual-btn manual-btn6 m-visible"></label>
+                    <label for="carousel-7" class="manual-btn manual-btn7 s-visible"></label>
+                    <label for="carousel-8" class="manual-btn manual-btn8 s-visible"></label>
+                    <label for="carousel-9" class="manual-btn manual-btn9 s-visible"></label>
+                    <label for="carousel-10" class="manual-btn manual-btn10 s-visible"></label>
+                    <label for="carousel-11" class="manual-btn manual-btn11 s-visible"></label>
+                    <label for="carousel-12" class="manual-btn manual-btn12 s-visible"></label>
                 </div>
 
             </div>
@@ -125,10 +142,14 @@
         </div>
         <div class="mountain-navigation">
             <div class="mountain-ul max-width">
-                <button>Mountain</button><button>Mountain 2</button>
+                <input type="radio" class="navigation-radio" name="navigation-radio" id="navRadio1" value="0" checked="true">
+                <label for="navRadio1">Mountain 1</label>
+                <input type="radio" class="navigation-radio" name="navigation-radio" id="navRadio2" value="1">
+                <label for="navRadio2">Mountain 2</label>
+
             </div>
         </div>
-        <div class="mountain-container" id="mountain-1">
+        <div class="mountain-container visible" id="mountain-1">
             <div class="mountain-info max-width">
                 <div class="schedule">
                     <h2 class="number-title">Schedule</h2>
@@ -211,5 +232,7 @@
             <span class="copyright">COPYRIGHT 2016. ALL RIGHTS RESERVED.</span>
         </div>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>
