@@ -79,7 +79,7 @@ a {
     text-transform: uppercase;
 }
 
-#logo-img{
+.logo-img{
     height: 43px;
     width: 43px;
     margin-right: 8px;
@@ -187,7 +187,7 @@ a {
     position: absolute;
 }
 
-#second-section .wrapper{
+.wrapper{
     position: absolute;
     width: 100%;
     left: 50%;
@@ -195,23 +195,24 @@ a {
     transform:translateX(-50%);
 }
 
-.wrapper h2{
-    font-family: 'Bebas Neue', sans-serif;
+.number-title{
     color:rgb(65,79,107);
 }
 
-.wrapper .flex{
+.align-bl{
     align-items: baseline;
 }
 
-.wrapper .number-header{
+.number-header{
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 170px;
     color:rgba(65,79,107,0.5);
 }
 
 .number-title{
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 2.5rem;
-    transform: translate(-2rem, -2rem);
+    transform: translate(-1.8rem, -1.8rem);
 }
 
 .small-lh{
@@ -234,52 +235,225 @@ a {
 #carousel-wrapper{
     background-color:rgba(65,79,107,0.75);
     width: 100%;
-    height: 25%;
+    height: 23%;
     display: flex;
+    justify-content: center;
     position: absolute;
     bottom: 0;
 }
 
-.carousel{
-    position: relative;
+.slider{
+    width: 960px;
+    overflow: hidden;
 }
 
-.carousel-slides {
+.slides{
+    width: 400%;
+
     display: flex;
 }
 
-.carousel-slides img {
-    width: 100%;
-    height: auto;
+.slides input{
+    display: none;
 }
 
-.carousel-buttons {
+.slide{
+    background-color: rgb(99,118,157);
+    position: relative;
+    transition: 0.5s;
+}
+
+.slide img{
+    width: 234px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 960px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.carousel-buttons label {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #aaa;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.manual-btn{
+    background-color: grey;
+    padding: 3.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-/* Styling for checked button */
-.carousel-buttons label:hover,
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.slide:not(:last-child){
+    margin-right: 5px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#carousel-1:checked ~ .first{
+    margin-left: 0;
+}
+
+#carousel-2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#carousel-3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#carousel-4:checked ~ .first{
+    margin-left: -75%;
+}
+
+/* .carousel-buttons label:hover,
 .carousel-buttons input:checked + label {
   background-color: white;
 }
 
-/* Hide radio buttons */
 .carousel-buttons input {
   display: none;
+} */
+
+/* third section */
+
+#third-section.section{
+    min-height: 0;
+}
+
+#third-section .wrapper{
+    position: relative;
+}
+
+.third-header {
+    margin: 0 30px;
+    width: fit-content;
+}
+
+.third-header .number-header{
+    pointer-events: none;
+    line-height: 1em;
+}
+
+.third-header-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#third-section .content-font{
+    margin-right: 10%;
+}
+
+.mountain-navigation{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(65,79,107);
+    display: flex;
+    justify-content: center;
+}
+
+.mountain-ul{
+    width: 100%;
+}
+
+.mountain-ul button{
+    font-size: 24px;
+    color:rgb(176,180,190);
+    font-weight: 700;
+    font-family: "Oswald";
+    height: 100%;
+    padding: 0 16px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.mountain-container{
+    background-position:left top ;
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.mountain-info{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.schedule{
+    background-color: rgba(255, 255, 255,0.702);
+    margin-left: 20px;
+    width: 352px;
+    height: 229px;
+    padding: 20px 40px;
+}
+
+.schedule .number-title{
+    transform: none;
+    margin-left: 8px;
+}
+
+#mountain-1{
+    background-image: url('./img/third section/Tab1.png');
+}
+
+.schedule div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Lato";
+}
+
+
+/* mountain 2 */
+#mountain-2{
+    background-image: url('./img/third section/Tab2.png');
+}
+
+/* footer */
+
+#footer{
+    background-color: rgb(65,79,107);
+    height: 74px;
+    width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-info{
+    width: 100%;
+    align-items: center;
+}
+
+.full-width{
+    width: 100%;
+}
+
+footer .logo-name span{
+    color: rgb(99,118,157);
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px;
+letter-spacing: 1px;
+line-height: 20px;
+color: rgb(99,118,157);
+font-weight: 900;
+font-style: italic;
+font-family: "Lato";
 }

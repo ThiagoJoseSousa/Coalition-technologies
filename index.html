@@ -8,15 +8,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&display=swap" rel="stylesheet">
-
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;900&family=Oswald:wght@700&display=swap" rel="stylesheet"> </head>
 <body>
     <nav id="navbar">
         <div class="nav-content max-width">
             <div class="mr-auto flex">
-                <img src="./assets/img/Logo.png" alt="logo" id="logo-img" />
-                <div id="logo-name" class="flex-column flex-middle">
+                <img src="./assets/img/Logo.png" alt="logo" class="logo-img" id="nav-img" />
+                <div id="nav-name" class="flex-column flex-middle logo-name">
                     <span class="small-angeles">Los Angeles</span>
                     <span class="small-mountain">Mountains</span>
                 </div>
@@ -33,9 +31,10 @@
             <span class="mountains">Mountains</span>
         </h1>
     </section>
+
     <section id="second-section" class="section">
         <div class="wrapper max-width">
-            <div class="flex small-lh">
+            <div class="flex align-bl small-lh">
                 <h2 class="number-header">01.</h2>
                 <h2 class="number-title">History</h2>
             </div>
@@ -48,20 +47,169 @@
         </div>
 
         <div id="carousel-wrapper">
-            <div class="carousel margin-auto">
-                <div class="carousel-slides">
-                    <img src="./assets/img/second section/Group 8.png" alt="Image 1">
-                    <img src="./assets/img/second section/Group 10.png" alt="Image 2">
-                    <img src="./assets/img/second section/Group 8.png" alt="Image 3">
-                    <img src="./assets/img/second section/Group 10.png" alt="Image 4">
-                  </div>
-                  <div class="carousel-buttons">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                  </div>
+            <div class="margin-auto slider">
+                <div class="slides">
+                    <input type="radio" name="carousel-radio" id="carousel-1" checked="checked">
+                    <input type="radio" name="carousel-radio" id="carousel-2">
+                    <input type="radio" name="carousel-radio" id="carousel-3">
+                
+
+                <div class="slide first">
+                    <img src="./assets/img/second section/Group 10.png" alt="Climber atop mountain summit gazes under vast sky.">
+                </div>
+                
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 8.png" alt="Verdant mountain veiled in mystic fog.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 10.png" alt="Climber atop mountain summit gazes under vast sky.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 8.png" alt="Verdant mountain veiled in mystic fog.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 10.png" alt="Climber atop mountain summit gazes under vast sky.">
+                </div>
+                
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 8.png" alt="Verdant mountain veiled in mystic fog.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 10.png" alt="Climber atop mountain summit gazes under vast sky.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 8.png" alt="Verdant mountain veiled in mystic fog.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 10.png" alt="Climber atop mountain summit gazes under vast sky.">
+                </div>
+                
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 8.png" alt="Verdant mountain veiled in mystic fog.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 10.png" alt="Climber atop mountain summit gazes under vast sky.">
+                </div>
+
+                <div class="slide">
+                    <img src="./assets/img/second section/Group 8.png" alt="Verdant mountain veiled in mystic fog.">
+                </div>
+
+                </div>
+                <div class="manual-navigation">
+                    <label for="carousel-1" class="manual-btn manual-btn1"></label>
+                    <label for="carousel-2" class="manual-btn manual-btn2"></label>
+                    <label for="carousel-3" class="manual-btn manual-btn3"></label>
+                </div>
+
+            </div>
+        </div>|
+    </section>
+
+    <section id="third-section" class="section">
+        <div class="wrapper max-width third-header-wrapper">
+            <div class="third-header flex align-bl">
+                <h2 class="number-header">02.</h2>
+                <h2 class="number-title">Climb</h2>
+            </div>
+            <p class="content-font">scelerisque id quam sed dignissim Pellentesque urna nunc, 
+            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p> 
+
+        </div>
+        <div class="mountain-navigation">
+            <div class="mountain-ul max-width">
+                <button>Mountain</button><button>Mountain 2</button>
             </div>
         </div>
+        <div class="mountain-container" id="mountain-1">
+            <div class="mountain-info max-width">
+                <div class="schedule">
+                    <h2 class="number-title">Schedule</h2>
+                    <div class="">
+                        <span>25 Nov 2016</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+                    <div class="">
+                        <span>28 Nov 2016</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+                    <br>
+
+                    <div class="">
+                        <span>18 Dec 2016</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+                    
+                    <br>
+
+                    <div class="">
+                        <span>7 Jan 2017</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mountain-container" id="mountain-2">
+            <div class="mountain-info max-width">
+                <div class="schedule">
+                    <h2 class="number-title">Schedule</h2>
+                    <div class="">
+                        <span>17 Nov 2016</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+                    <br>
+
+                    <div class="">
+                        <span>13 Dec 2016</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+
+
+                    <div class="">
+                        <span>28 Dec 2016</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+                    
+                    <br>
+
+                    <div class="">
+                        <span>9 Feb 2017</span> 
+                        <span>Vestibulum viverra</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <footer id="footer" class="flex flex-middle">
+        <div class="max-width flex full-width">
+
+            <div class="footer-info flex mr-auto">
+                <img src="./assets/img/Logo.png" alt="logo" class="logo-img" />
+                <div class="flex-column flex-middle logo-name">
+                    <span class="small-angeles">Los Angeles</span>
+                    <span class="small-mountain">Mountains</span>
+                </div>
+            </div>
+            <span class="copyright">COPYRIGHT 2016. ALL RIGHTS RESERVED.</span>
+        </div>
+    </footer>
 </body>
 </html>
